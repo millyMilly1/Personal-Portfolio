@@ -3,8 +3,8 @@ import "./testimonial.css";
 
 const testimonial = () => {
   return (
-    <div>testimonial</div>
+    <section id='testimonial'> testimonial </section>
   )
 }
 
-export default testimonial
+export default testimonial 
