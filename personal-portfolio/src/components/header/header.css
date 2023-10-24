@@ -72,14 +72,14 @@ header{
 }
 
 /* ============ small devices  ========== */
-@media screen and (max-width:1024px) {
+@media screen and (max-width:600px) {
     header{
         height: 150vh;
     }
-    /* .header__socials, .scroll__down{
+     .header__socials, .scroll__down{
         display: none;
         
-    } */
+    } 
 }
 
 
