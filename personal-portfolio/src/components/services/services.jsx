@@ -50,7 +50,7 @@ const services = () => {
 
           <article className='services'>
             <div className='services__head'>
-              <h3>Crypto-Currency trading</h3>
+              <h3>Crypto-Currency Trading</h3>
             </div>
 
 
@@ -91,7 +91,6 @@ const services = () => {
             <div className='services__head'>
               <h3>web development</h3>
             </div>
-
 
             <ul className='services__list'>
               <li>
