@@ -160,8 +160,10 @@ const services = () => {
                 <p>consectetur adipiscing elit. Nulla facilisi.</p>
               </li>
             </ul>
+            
           </article>
            {/* end of third service*/}
+
         </div>
     </section>
   )
