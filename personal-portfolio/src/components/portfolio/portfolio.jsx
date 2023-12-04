@@ -1,11 +1,11 @@
 import React from 'react';
 import './portfolio.css';
-import pic from '../../assets/PXL_20230403_150803966.PORTRAIT.jpg';
-import pic1 from '../../assets/PXL_20230403_150803966.PORTRAIT.jpg';
-import pic2 from '../../assets/PXL_20230403_150803966.PORTRAIT.jpg';
-import pic3 from '../../assets/PXL_20230403_150803966.PORTRAIT.jpg';
-import pic4 from '../../assets/PXL_20230403_150803966.PORTRAIT.jpg';
-import pic5 from '../../assets/PXL_20230403_150803966.PORTRAIT.jpg';
+// import pic from '../../assets/PXL_20230403_150803966.PORTRAIT.jpg';
+import pic1 from '../../assets/OIG.udGtSpJUej_.jpg';
+import pic2 from '../../assets/OIG.WhYPcmYEBnK.jpg';
+import pic3 from '../../assets/me.png';
+import pic4 from '../../assets/background_image_copy.jpg';
+// import pic5 from '../../assets/PXL_20230403_150803966.PORTRAIT.jpg';
 
 
 
@@ -53,20 +53,20 @@ const portfolio = () => {
 
       <div className='container portfolio__container'>
         {
-          data.map({id, image, github, demo}) => {
+          data.map(({id, image, github, title, demo}) => {
             return (
-              <article className='portfolio__item'>
+              <article key={id} className='portfolio__item'>
                 <div className='portfolio__item-image'>
-                  <img src={pic} alt='portfolio pic'/>
+                  <img src={image} alt= {title} />
                 </div>
-                <h3>this is a portfolio item title</h3>
+                <h3>{title}</h3>
                 <div className='portfolio__item-cta'>
-                  <a href=''></a>
+                  <a href= {github} className='btn' target='_blank' rel='noreferrer'>github</a>
+                  <a href= {demo} className='btn btn-primary' target='_blank' rel='noreferrer'>live demo</a>
                 </div>
               </article>
-              <div></div>
             )
-          }
+          })
         }
       </div>
      </section>
