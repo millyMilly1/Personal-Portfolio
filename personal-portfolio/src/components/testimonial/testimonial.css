@@ -5,7 +5,6 @@
 
 .client__avatar {
     width: 4rem;
-    
     aspect-ratio: 1/1;
     overflow: hidden;
     border-radius: 50%;
